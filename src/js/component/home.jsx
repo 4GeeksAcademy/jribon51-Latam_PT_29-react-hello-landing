@@ -5,6 +5,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import NavBar from "./navBar";
 import JumboTrom from "../jumbotron";
 import Card from "./card";
+import FooterPro from "./footerPro";
 
 
 const datos = [{ nombre: "irene zoe", descripcion: "Como escritora y cineasta se doctoró en Literatura por la Universidad de Columbia", imagen: "https://e00-elmundo.uecdn.es/elmundo/imagenes/2013/01/29/espana/1359456471_0.jpg" },
@@ -25,10 +26,11 @@ const Home = () => {
 				</div>
 				<div className="row">
 					{datos.map((value, index) => {
-						return <Card key={index} nombre={value.nombre} descripcion={value.descripcion} ruta={value.imagen} />
+						return <Card key={index} nombre={value.nombre} descripcion={value.descripcion} ruta={value.imagen} indice={index} />
 					})}
 				</div>
 			</div>
+			<FooterPro/>
 
 
 		</>

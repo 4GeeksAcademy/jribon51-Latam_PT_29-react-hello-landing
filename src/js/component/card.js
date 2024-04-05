@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const Card = (props) => {
     console.log(props);
     return (
-        <div className="col-md-3 ps-0">
+        <div className={`${props.indice==0 ? "ps-0":""} ${props.indice==3 ? "pe-0":""} col-lg-3 col-md-4`}>
             <div className="card">
                 <img src={props.ruta} className="card-img-top" />
                 <div className="card-body">
